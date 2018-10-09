@@ -2,8 +2,8 @@
 class Anagram
 
   attr_accessor :anagram
-  def initialize(anagram)
-    @anagram = anagram
+  def initialize(listen)
+    @anagram = listen
   end
   def match(array)
     array.select {|x| x.split("").sort == @anagram.split("").sort}

@@ -5,8 +5,8 @@ class Anagram
   def initialize(anagram)
     @anagram = anagram
   end
-  def match(anaword)
-
+  def match(array)
+    array.select {|x| x.split("").sort == @name.split("").sort}
     end
   end
 end
